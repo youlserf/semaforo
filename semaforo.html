@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/semaforo.css">
+    <script src="js/semaforo.js"></script>
+</head>
+<body> 
+    
+       
+            <h1>"Semáforo Inteligente"</h1>
+            
+            <div id="box-out">
+                <h2>Personas</h2>  
+                <div class="box-inside">
+                    <div class="circulo0 color0"></div>
+                    <div class=" rojo circle" id="R"></div>
+                    <div class=" amarillo circle" id="A"></div>
+                    <div class=" verde circle" id="V"></div>
+                </div>
+            </div>
+            <div id="box-out2"> 
+                <h2>Vehiculos</h2>                  
+                <div class="box-inside">
+                     <div class="circulo0 color0" ></div>
+                     <div class=" rojo circle" id="R1"></div>
+                     <div class=" amarillo circle" id="A1"></div>
+                     <div class=" verde circle" id="V1"></div>
+                </div>
+            </div>
+
+
+            <div id="form">
+
+                <div class="contenido-tab" >
+                    <div id="datos">
+                        <h3>Ingreso<br></h3>
+                        <form method="GET" action="" onsubmit="return validacion()"> 
+                            <div class="contenedor-input">
+                                <label>
+                                    Ingrese N° de personas <br><span >*</span>
+                                </label>
+                                <input type="number" name="npersons" id="npersons" > 
+                            </div>
+        
+                            <div class="contenedor-input">
+                                <label>
+                                    Ingrese N° de vehiculos <br><span >*</span>
+                                </label>
+                                <input type="number" name="ncars" id="ncars"> 
+                            </div>
+
+                           <button type="button" id="boton" onclick=" iniciar() ">Iniciar</button>
+                        </form>
+                    </div>
+                    <div id="registrarse">
+                        <h3>Resultados de semaforo <br></h3>
+                        <form action="#" method="post">
+                            <div class="fila-arriba">
+                                <div class="contenedor-input">
+                                    <label>
+                                        N° de personas que cruzaron <br><span>*</span>
+                                    </label>
+                                    <input type="text" id="per" disabled>
+                                </div>
+        
+                                <div class="contenedor-input">
+                                    <label>
+                                        N° de vehiculos que cruzaron <br><span>*</span>
+                                    </label>
+                                    <input type="text" id="car" disabled><br><br><br>
+                                </div>
+                            
+                            </div>
+
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+    
+        
+
+   
+</body>
+</html>
